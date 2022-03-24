@@ -1,0 +1,30 @@
+{
+  "name": "activebox",
+  "version": "1.0.0",
+  "description": "ActiveBox project",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "start:open": "parcel --open",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semajigr/activebox.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semajigr/activebox/issues"
+  },
+  "homepage": "https://github.com/semajigr/activebox#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.0",
+    "parcel": "^2.4.0",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "scss-reset": "^1.2.2",
+    "swiper": "^8.0.7"
+  }
+}

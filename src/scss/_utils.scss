@@ -1,0 +1,21 @@
+@use "sass:math";
+
+@function strip($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function rem($pxValue) {
+  @return #{calc(strip($pxValue) / strip($base-font-size))}rem;
+}
+
+@mixin tablet {
+  @media (max-width: #{map-get($breakpoints, tablet)}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{map-get($breakpoints, mobile)}) {
+    @content;
+  }
+}
