@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Activebox</title>
 
     <link
       rel="stylesheet"
@@ -12,9 +12,57 @@
     />
 
     <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
   </head>
   <body>
-    <header class="header"></header>
+    <div class="wrapper">
+      <div class="main-screen">
+        <header class="header">
+          <div class="header__container container">
+            <div class="header__logo">
+              <img
+                class="header__image"
+                src="../src/images/logo.svg"
+                alt="Activebox"
+              />
+              <input
+                id="burger-checkbox"
+                class="header__checkbox"
+                type="checkbox"
+              />
+
+              <label class="header__label" for="burger-checkbox">
+                <img
+                  class="header__toggler"
+                  src="./images/burger.svg"
+                  alt="Burger"
+                />
+              </label>
+            </div>
+            <div class="header__menu">
+              <ul class="header__menu-list">
+                <a href="#" class="header__menu-item">features</a
+                ><a href="#" class="header__menu-item">works</a
+                ><a href="#" class="header__menu-item">our team</a
+                ><a href="#" class="header__menu-item">testimonials</a
+                ><a href="#" class="header__menu-item">download</a>
+              </ul>
+            </div>
+          </div>
+        </header>
+
+        <div class="content container">
+          <h1 class="content__title">
+            Your Favorite One Page Multi Purpose Template
+          </h1>
+          <p class="content__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            commodo cursus magna vel scelerisque nisl consectetur et.
+          </p>
+          <button class="button">Find Out More</button>
+        </div>
+      </div>
+    </div>
 
     <div class="swiper">
       <div class="swiper-wrapper">
