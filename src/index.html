@@ -12,7 +12,11 @@
     />
 
     <link rel="stylesheet" href="./scss/main.scss" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./images/icons/favicon.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -22,32 +26,21 @@
             <div class="header__logo">
               <img
                 class="header__image"
-                src="../src/images/logo.svg"
+                src="../src/images/icons/logo.svg"
                 alt="Activebox"
               />
-              <input
-                id="burger-checkbox"
-                class="header__checkbox"
-                type="checkbox"
-              />
-
-              <label class="header__label" for="burger-checkbox">
-                <img
-                  class="header__toggler"
-                  src="./images/burger.svg"
-                  alt="Burger"
-                />
-              </label>
             </div>
-            <div class="header__menu">
+            <input type="checkbox" id="burger" />
+            <label for="burger"></label>
+            <nav class="header__menu">
               <ul class="header__menu-list">
-                <a href="#" class="header__menu-item">features</a
-                ><a href="#" class="header__menu-item">works</a
-                ><a href="#" class="header__menu-item">our team</a
-                ><a href="#" class="header__menu-item">testimonials</a
-                ><a href="#" class="header__menu-item">download</a>
+                <li><a href="#" class="header__menu-item">features</a></li>
+                <li><a href="#" class="header__menu-item">works</a></li>
+                <li><a href="#" class="header__menu-item">our team</a></li>
+                <li><a href="#" class="header__menu-item">testimonials</a></li>
+                <li><a href="#" class="header__menu-item">download</a></li>
               </ul>
-            </div>
+            </nav>
           </div>
         </header>
 
@@ -60,6 +53,146 @@
             commodo cursus magna vel scelerisque nisl consectetur et.
           </p>
           <button class="button">Find Out More</button>
+        </div>
+      </div>
+
+      <div class="features container">
+        <div class="features__box">
+          <img
+            class="features__logo"
+            src="./images/icons/icon_1.svg"
+            alt="image"
+          />
+          <h4 class="features__title">Easily Customised</h4>
+          <p class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla non metus auctor fringilla.
+          </p>
+        </div>
+        <div class="features__box">
+          <img
+            class="features__logo"
+            src="./images/icons/icon_2.svg"
+            alt="image"
+          />
+          <h4 class="features__title">Responsive REady</h4>
+          <p class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla non metus auctor fringilla.
+          </p>
+        </div>
+        <div class="features__box">
+          <img
+            class="features__logo"
+            src="./images/icons/icon_3.svg"
+            alt="image"
+          />
+          <h4 class="features__title">Modern Design</h4>
+          <p class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla non metus auctor fringilla.
+          </p>
+        </div>
+        <div class="features__box">
+          <img
+            class="features__logo"
+            src="./images/icons/icon_4.svg"
+            alt="image"
+          />
+          <h4 class="features__title">Clean Code</h4>
+          <p class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla non metus auctor fringilla.
+          </p>
+        </div>
+        <div class="features__box">
+          <img
+            class="features__logo"
+            src="./images/icons/icon_5.svg"
+            alt="image"
+          />
+          <h4 class="features__title">Ready to Ship</h4>
+          <p class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla non metus auctor fringilla.
+          </p>
+        </div>
+        <div class="features__box">
+          <img
+            class="features__logo"
+            src="./images/icons/icon_6.svg"
+            alt="image"
+          />
+          <h4 class="features__title">Download for Free</h4>
+          <p class="features__text">
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam
+            quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper
+            nulla non metus auctor fringilla.
+          </p>
+        </div>
+      </div>
+
+      <div class="work__container">
+        <div class="work__case case">
+          <img class="work__image" src="./images/work_1.png" alt="our work" />
+          <div class="case__overlay">
+            <h4 class="case__title">Project Name</h4>
+            <h5 class="case__subtitle">User Interface Design</h5>
+          </div>
+        </div>
+        <div class="work__case">
+          <img class="work__image" src="./images/work_2.png" alt="our work" />
+          <div class="case__overlay">
+            <h4 class="case__title">Project Name</h4>
+            <h5 class="case__subtitle">User Interface Design</h5>
+          </div>
+        </div>
+        <div class="work__case">
+          <img class="work__image" src="./images/work_3.png" alt="our work" />
+          <div class="case__overlay">
+            <h4 class="case__title">Project Name</h4>
+            <h5 class="case__subtitle">User Interface Design</h5>
+          </div>
+        </div>
+        <div class="work__case">
+          <img class="work__image" src="./images/work_4.png" alt="our work" />
+          <div class="case__overlay">
+            <h4 class="case__title">Project Name</h4>
+            <h5 class="case__subtitle">User Interface Design</h5>
+          </div>
+        </div>
+        <div class="work__case">
+          <img class="work__image" src="./images/work_5.png" alt="our work" />
+          <div class="case__overlay">
+            <h4 class="case__title">Project Name</h4>
+            <h5 class="case__subtitle">User Interface Design</h5>
+          </div>
+        </div>
+        <div class="work__case">
+          <img class="work__image" src="./images/work_6.png" alt="our work" />
+          <div class="case__overlay">
+            <h4 class="case__title">Project Name</h4>
+            <h5 class="case__subtitle">User Interface Design</h5>
+          </div>
+        </div>
+        <div class="work__case">
+          <img class="work__image" src="./images/work_7.png" alt="our work" />
+          <div class="case__overlay">
+            <h4 class="case__title">Project Name</h4>
+            <h5 class="case__subtitle">User Interface Design</h5>
+          </div>
+        </div>
+        <div class="work__case">
+          <img class="work__image" src="./images/work_8.png" alt="our work" />
+          <div class="case__overlay">
+            <h4 class="case__title">Project Name</h4>
+            <h5 class="case__subtitle">User Interface Design</h5>
+          </div>
         </div>
       </div>
     </div>

@@ -2,10 +2,15 @@
   background: url(..//../images/main-screen.png);
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 747px;
+  margin-bottom: 120px;
 }
 
 .header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+
   &__container {
     display: flex;
     align-items: center;
@@ -50,9 +55,14 @@
     padding: 42px 0 38px;
     width: 134px;
     border-bottom: 3px solid transparent;
+    transition: 0.1s;
 
     &:hover {
       border-bottom: 3px solid #babbc5;
+    }
+    &:active {
+      color: #e71414;
+      border-bottom: 3px solid #e71414;
     }
 
     @include tablet {
@@ -74,30 +84,6 @@
       }
     }
   }
-
-  &__toggler {
-    cursor: pointer;
-    user-select: none;
-    display: none;
-
-    @include mobile {
-      display: inline-block;
-    }
-  }
-
-  &__checkbox {
-    display: none;
-  }
-
-  &__checkbox:checked ~ .header__menu {
-    display: block;
-  }
-
-  &__logo-image {
-    @include mobile {
-      width: 103px;
-    }
-  }
 }
 
 .content {
@@ -105,6 +91,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-height: 100%;
 
   &__title {
     margin: 130px 0 32px;
@@ -150,10 +137,12 @@
   @include tablet {
     max-width: 313px;
     padding: 25px 60px;
+    margin-bottom: 126px;
   }
 
   @include mobile {
     min-width: 280px;
     padding: 20px 45px;
+    margin-bottom: 52px;
   }
 }

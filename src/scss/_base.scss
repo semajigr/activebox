@@ -5,12 +5,39 @@ body {
 
 .wrapper {
   width: 100%;
+  overflow: hidden;
+  background: #e5e5e5;
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1206px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 12px;
+}
+
+#burger,
+[for="burger"] {
+  display: none;
+  background-color: #252b49;
+  color: white;
+
+  @include mobile {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 15px;
+    top: 40px;
+  }
+  &:checked + label + nav {
+    display: block;
+  }
+  &:checked + [for="burger"]:before {
+    content: "✖";
+  }
+}
+
+[for="burger"]:before {
+  content: "☰";
 }
 
 h1 {
@@ -67,7 +94,7 @@ button {
 
 button:hover {
   background: $darkRed;
-  transition: 1s;
+  transition: 0.1s;
 }
 
 button:active {
