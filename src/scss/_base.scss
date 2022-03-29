@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 1206px;
+  max-width: 1194px;
   margin: 0 auto;
   padding: 0 12px;
 }
@@ -18,27 +18,46 @@ body {
 #burger,
 [for="burger"] {
   display: none;
-  background-color: #252b49;
-  color: white;
+}
 
+[for="burger"] {
   @include mobile {
-    display: inline-block;
+    display: block;
     position: absolute;
     text-align: center;
     right: 15px;
     top: 40px;
-  }
-  &:checked + label + nav {
-    display: block;
-  }
-  &:checked + [for="burger"]:before {
-    content: "✖";
   }
 }
 
 [for="burger"]:before {
   content: "☰";
 }
+
+#burger:checked + label + nav {
+  display: block;
+}
+
+#burger:checked + [for="burger"]:before {
+  content: "✖";
+}
+
+// #burger,
+// [for="burger"] {
+//   display: none;
+//   // background-color: #252b49;
+//   color: white;
+
+//   @include mobile {
+//     display: inline-block;
+//
+//   }
+//
+//
+// }
+
+//
+// }
 
 h1 {
   font-weight: 900;

@@ -307,37 +307,35 @@ body {
 }
 
 .container {
-  max-width: 1206px;
+  max-width: 1194px;
   margin: 0 auto;
   padding: 0 12px;
 }
 
 #burger, [for="burger"] {
-  color: #fff;
-  background-color: #252b49;
   display: none;
 }
 
 @media (max-width: 48rem) {
-  #burger, [for="burger"] {
+  [for="burger"] {
     text-align: center;
-    display: inline-block;
+    display: block;
     position: absolute;
     top: 40px;
     right: 15px;
   }
 }
 
-#burger:checked + label + nav, [for="burger"]:checked + label + nav {
+[for="burger"]:before {
+  content: "☰";
+}
+
+#burger:checked + label + nav {
   display: block;
 }
 
-#burger:checked + [for="burger"]:before, [for="burger"]:checked + [for="burger"]:before {
+#burger:checked + [for="burger"]:before {
   content: "✖";
-}
-
-[for="burger"]:before {
-  content: "☰";
 }
 
 h1 {
@@ -520,8 +518,8 @@ button:active {
 @media (max-width: 64rem) {
   .header__menu-item {
     width: 112px;
-    font-size: 12px;
-    line-height: 14px;
+    font-size: .75rem;
+    line-height: .875rem;
   }
 }
 
@@ -555,40 +553,40 @@ button:active {
 @media (max-width: 64rem) {
   .content__title {
     margin: 157px 0 62px;
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 3rem;
+    line-height: 3.5rem;
   }
 }
 
 @media (max-width: 48rem) {
   .content__title {
     margin: 38px 0 32px;
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
   }
 }
 
 .content__description {
   color: #fff;
   margin-bottom: 82px;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 @media (max-width: 64rem) {
   .content__description {
     margin-bottom: 91px;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
   }
 }
 
 @media (max-width: 48rem) {
   .content__description {
     margin-bottom: 51px;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: .875rem;
+    line-height: 1rem;
   }
 }
 
@@ -608,7 +606,7 @@ button:active {
 
 @media (max-width: 48rem) {
   .button {
-    min-width: 280px;
+    max-width: 280px;
     margin-bottom: 52px;
     padding: 20px 45px;
   }
