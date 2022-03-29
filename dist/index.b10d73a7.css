@@ -303,42 +303,36 @@ body {
 h1 {
   text-transform: uppercase;
   color: #fff;
-  font-size: 64px;
-  font-weight: 900;
-  line-height: 75px;
+  font-size: 4rem;
+  line-height: 4.6875rem;
 }
 
 h2 {
   color: #fff;
   font-family: Cardo, sans-serif;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 42px;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
 }
 
 h3 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 35px;
+  font-size: 1.875rem;
+  line-height: 2.1875rem;
 }
 
 h4 {
   text-transform: uppercase;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
 }
 
 h5 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
 }
 
 h6 {
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 15px;
+  font-size: .8125rem;
+  line-height: .9375rem;
 }
 
 button {
@@ -346,14 +340,58 @@ button {
   color: #fff;
   cursor: pointer;
   background: #ff4343;
-  padding: 10px 100px;
-  font-size: 24px;
-  line-height: 28px;
+  padding: 25px 60px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
 }
 
 button:hover {
   background: #b90c0c;
   transition: all 1s;
+}
+
+:root {
+  --swiper-pagination-bullet-horizontal-gap: 12.5px;
+}
+
+@media (max-width: 48rem) {
+  :root {
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+  }
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-pagination {
+  margin-top: 31px;
+  position: static;
+}
+
+@media (max-width: 64rem) {
+  .swiper-pagination {
+    margin-top: 23px;
+  }
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 14px;
+  height: 14px;
+  background: none;
+  border: 1px solid #7e5d6f;
+}
+
+@media (max-width: 64rem) {
+  .swiper-pagination-bullet {
+    width: 9.5px;
+    height: 9.5px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #7e5d6f;
 }
 
 :root {
@@ -470,6 +508,303 @@ button:hover {
   .testimonials__quote-author {
     font-size: .75rem;
     line-height: .875rem;
+  }
+}
+
+.download {
+  max-width: 1170px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 64rem) {
+  .download {
+    max-width: 984px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .download {
+    max-width: 280px;
+  }
+}
+
+.download__title {
+  margin-top: 114px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+@media (max-width: 64rem) {
+  .download__title {
+    margin-top: 77px;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .download__title {
+    margin-top: 34px;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+  }
+}
+
+.download__subtitle {
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+@media (max-width: 64rem) {
+  .download__subtitle {
+    margin-bottom: 43px;
+    font-size: .875rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 64rem) {
+  .download__subtitle {
+    margin-bottom: 11px;
+    font-size: .8125rem;
+    line-height: .9375rem;
+  }
+}
+
+.download__button {
+  margin-bottom: 114px;
+}
+
+@media (max-width: 64rem) {
+  .download__button {
+    margin-bottom: 78px;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .download__button {
+    margin-bottom: 45px;
+  }
+}
+
+.footer {
+  background: #353c65;
+}
+
+.footer__description {
+  justify-content: space-around;
+  column-gap: 30px;
+  margin: 0 auto;
+  padding: 71px 170px;
+  display: flex;
+}
+
+@media (max-width: 64rem) {
+  .footer__description {
+    padding: 46px 20px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .footer__description {
+    flex-direction: column;
+    align-items: center;
+    padding: 34px 20px;
+  }
+}
+
+.footer__location {
+  width: 33.3%;
+  text-align: center;
+}
+
+@media (max-width: 48rem) {
+  .footer__location {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .footer__location:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.footer__title {
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 29px;
+  font-weight: 700;
+}
+
+@media (max-width: 64rem) {
+  .footer__title {
+    margin-bottom: 18px;
+    font-size: .875rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .footer__title {
+    margin-bottom: 36px;
+  }
+}
+
+.footer__icon {
+  margin: 0 25px;
+}
+
+@media (max-width: 64rem) {
+  .footer__icon {
+    margin: 0 23px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .footer__icon {
+    margin: 0 10px;
+  }
+}
+
+.footer__subtitle {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+@media (max-width: 64rem) {
+  .footer__subtitle {
+    font-size: .875rem;
+    line-height: 1rem;
+  }
+}
+
+.footer__bg {
+  background: #2c3154;
+  justify-content: center;
+  padding: 24px 0;
+  display: flex;
+}
+
+@media (max-width: 64rem) {
+  .footer__bg {
+    padding: 14px 0;
+  }
+}
+
+@media (max-width: 48rem) {
+  .footer__bg {
+    padding: 28px 0;
+  }
+}
+
+.footer__copyright {
+  width: 370px;
+  text-align: center;
+  text-transform: capitalize;
+  color: gray;
+}
+
+@media (max-width: 64rem) {
+  .footer__copyright {
+    width: 314px;
+    font-size: .875rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .footer__copyright {
+    width: 280px;
+  }
+}
+
+.footer__white {
+  color: #fff;
+}
+
+.team {
+  max-width: 1170px;
+  column-gap: 30px;
+  margin: 0 auto;
+  display: flex;
+}
+
+@media (max-width: 64rem) {
+  .team {
+    max-width: 984px;
+    column-gap: 25px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .team {
+    max-width: 280px;
+    flex-direction: column;
+    margin-top: 25px;
+  }
+}
+
+.team__card {
+  width: 25%;
+  margin: 114px 0;
+}
+
+@media (max-width: 64rem) {
+  .team__card {
+    margin: 78px 0;
+  }
+}
+
+@media (max-width: 48rem) {
+  .team__card {
+    width: 100%;
+    margin: 0 0 49px;
+  }
+}
+
+.team__name {
+  text-transform: capitalize;
+  margin: 30px 0 5px;
+  font-weight: 700;
+}
+
+@media (max-width: 64rem) {
+  .team__name {
+    margin: 25px 0 4px;
+    font-size: 1.125rem;
+    line-height: 1.3125rem;
+  }
+}
+
+.team__profession {
+  text-transform: uppercase;
+  color: #ff4343;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 64rem) {
+  .team__profession {
+    margin-bottom: 22px;
+    font-size: .875rem;
+    line-height: 1rem;
+  }
+}
+
+.team__description {
+  color: #6c7279;
+  margin-bottom: 38px;
+}
+
+@media (max-width: 64rem) {
+  .team__description {
+    margin-bottom: 39px;
+    font-size: .875rem;
+    line-height: 1rem;
   }
 }
 
