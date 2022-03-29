@@ -18,6 +18,7 @@ body {
 #burger,
 [for="burger"] {
   display: none;
+  color: white;
 }
 
 [for="burger"] {
@@ -41,23 +42,6 @@ body {
 #burger:checked + [for="burger"]:before {
   content: "✖";
 }
-
-// #burger,
-// [for="burger"] {
-//   display: none;
-//   // background-color: #252b49;
-//   color: white;
-
-//   @include mobile {
-//     display: inline-block;
-//
-//   }
-//
-//
-// }
-
-//
-// }
 
 h1 {
   font-weight: 900;
