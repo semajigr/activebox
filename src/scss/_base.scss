@@ -6,7 +6,6 @@ body {
 .wrapper {
   width: 100%;
   overflow: hidden;
-  background: #e5e5e5;
 }
 
 .container {
@@ -44,6 +43,7 @@ body {
 }
 
 h1 {
+  font-weight: 900;
   font-size: rem(64px);
   line-height: rem(75px);
   text-transform: uppercase;
@@ -79,12 +79,8 @@ h6 {
 }
 
 button {
-<<<<<<< HEAD
   padding: 25px 60px;
-=======
   max-width: 369px;
-  padding: 25px 85px;
->>>>>>> f01c5c31cf0500fd195dd23f0a853016eb53811d
   text-transform: uppercase;
   font-size: rem(24px);
   line-height: rem(28px);
@@ -100,44 +96,4 @@ button:hover {
 
 button:active {
   box-shadow: 4px 4px 30px #ff4343;
-}
-
-// TODO: DELETE LATER
-
-:root {
-  --swiper-pagination-bullet-horizontal-gap: 12.5px;
-
-  @include mobile {
-    --swiper-pagination-bullet-horizontal-gap: 10px;
-  }
-}
-
-.swiper {
-  width: 100%;
-}
-
-.swiper-pagination {
-  position: static;
-  margin-top: 31px;
-
-  @include tablet {
-    margin-top: 23px;
-  }
-
-  &-bullet {
-    border: 1px solid #7e5d6f;
-    background: none;
-    opacity: 1;
-    width: 14px;
-    height: 14px;
-
-    @include tablet {
-      width: 9.5px;
-      height: 9.5px;
-    }
-
-    &-active {
-      background: #7e5d6f;
-    }
-  }
 }
