@@ -3,6 +3,46 @@ body {
   font-family: Raleway, sans-serif;
 }
 
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  background: #e5e5e5;
+}
+
+.container {
+  max-width: 1194px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+#burger,
+[for="burger"] {
+  display: none;
+  color: white;
+}
+
+[for="burger"] {
+  @include mobile {
+    display: block;
+    position: absolute;
+    text-align: center;
+    right: 15px;
+    top: 40px;
+  }
+}
+
+[for="burger"]:before {
+  content: "☰";
+}
+
+#burger:checked + label + nav {
+  display: block;
+}
+
+#burger:checked + [for="burger"]:before {
+  content: "✖";
+}
+
 h1 {
   font-size: rem(64px);
   line-height: rem(75px);
@@ -39,7 +79,12 @@ h6 {
 }
 
 button {
+<<<<<<< HEAD
   padding: 25px 60px;
+=======
+  max-width: 369px;
+  padding: 25px 85px;
+>>>>>>> f01c5c31cf0500fd195dd23f0a853016eb53811d
   text-transform: uppercase;
   font-size: rem(24px);
   line-height: rem(28px);
@@ -50,7 +95,11 @@ button {
 
 button:hover {
   background: $darkRed;
-  transition: 1s;
+  transition: 0.1s;
+}
+
+button:active {
+  box-shadow: 4px 4px 30px #ff4343;
 }
 
 // TODO: DELETE LATER

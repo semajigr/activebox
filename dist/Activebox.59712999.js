@@ -517,4 +517,4 @@ function hmrAcceptRun(bundle, id) {
 
 },{}]},["cT11E","4M6V8"], "4M6V8", "parcelRequire2c60")
 
-//# sourceMappingURL=Activebox.59712999.js.map
+//# sourceMappingURL=activebox.59712999.js.map
